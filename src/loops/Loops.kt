@@ -35,4 +35,9 @@ fun main() {
      */
 
     //Challenge
+    var sum = 0L
+    for (i in 100..100000L) {
+        sum += i
+    }
+    println(sum)
 }
