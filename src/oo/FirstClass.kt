@@ -17,7 +17,24 @@ class Person(val name: String, val age: Int) {
     }
 
     fun getYearOfBirth() = 2024 - age
+}
 
+//Challenge classes
+class Book(val title: String, val author: String, val publicationYear: Int, var borrowed: Boolean) {
+
+    fun borrow() {
+        borrowed = true
+    }
+
+    fun returned() {
+        borrowed = false
+    }
+
+    fun bookInfo() {
+        println(title)
+        println("by $author")
+        println(publicationYear)
+    }
 }
 
 fun main() {
